@@ -1,0 +1,27 @@
+
+<section>
+    <h1 class="title">Search your Gnome</h1>
+    <table datatable="ng" class="table row-border hover">
+        <thead>
+        <tr>
+            <th>View Detail</th>
+            <th>ID</th>
+            <th>Full name</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="gnome in Gnome.gnomeList.Brastlewark">
+                <td class="title">
+                    <input type="button" value="Show details" ui-sref="gnome.details({id: gnome.id})"/>
+                </td>
+                <td ng-bind="gnome.id" class="title"></td>
+                <td ng-bind="gnome.name" class="title"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+<section ng-show="GnomeDetails.showError" class="title error">
+        <h1>{{GnomeDetails.errorMessage}}</h1>
+    </section>
+<ui-view></ui-view>

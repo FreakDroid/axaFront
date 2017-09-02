@@ -1,0 +1,32 @@
+<section class="" ng-show="GnomeDetails.show">
+        <div class="card">
+            <h1 class="title">The gnome selected</h1>
+                <div class="container">
+                        <img ng-src="{{GnomeDetails.details.thumbnail}}" alt="myPhoto"  class="img"/>  
+                  <h4><b>{{GnomeDetails.details.name}}</b></h4> 
+                  <p>Age: {{GnomeDetails.details.age}}</p>
+                  <p>Weight: {{GnomeDetails.details.weight}}</p>
+                  <p>Height: {{GnomeDetails.details.height}}</p>
+                  <p>Hair color: {{GnomeDetails.details.hair_color}}</p>
+                  <p>Sex: {{GnomeDetails.sex}}</p>
+                  <p>Profesions:</p>
+                  <ul>
+                      <li ng-repeat="gnomeProfesions in GnomeDetails.details.professions">
+                          {{gnomeProfesions}}
+                      </li>
+                  </ul>
+                  <p>Friends: <span ng-if="GnomeDetails.details.friends.length == 0">I'm forever alone, I don't have friends</span></p>
+                    <ul>
+                        <li ng-repeat="gnomeFriends in GnomeDetails.details.friends">
+                            {{gnomeFriends}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-right">
+                        <input type="button" value="Close" ng-click="GnomeDetails.click()"/>
+                </div>
+        </div>
+</section>
+<section ng-show="GnomeDetails.showError" class="title error">
+    <h1>{{GnomeDetails.errorMessage}}</h1>
+</section>
