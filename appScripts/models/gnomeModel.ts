@@ -9,6 +9,5 @@ module GnomeModule{
         public hair_color: string;
         public professions: Array<string>;
         public friends: Array<string>;
-        //public Brastlewark: GnomeModel[];
     }
 }

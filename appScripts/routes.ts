@@ -1,5 +1,5 @@
 /// <reference path="../typings/index.d.ts" />
-
+//Angular routing
 module NewsModule{
     export class RouteConfig{
         public static $inject = ['$stateProvider', '$urlRouterProvider'];
