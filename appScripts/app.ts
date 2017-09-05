@@ -5,7 +5,7 @@
 /// <reference path="routes.ts" />
 
 //Main app
-var app = angular.module("NewsApp", ["ui.router", "datatables"]);
+var app = angular.module("GnomeApp", ["ui.router", "datatables"]);
 app.config(NewsModule.RouteConfig);
 
 //Gnome Module
