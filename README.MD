@@ -21,7 +21,7 @@ git clone https://github.com/FreakDroid/axaFront.git axaFront
 bower install
 ```
 
-3. Start the server
+4. Start the server
 
 ```
  gulp
