@@ -15,6 +15,12 @@ git clone https://github.com/FreakDroid/axaFront.git axaFront
  npm install
 ```
 
+3. Run bower install
+
+```
+bower install
+```
+
 3. Start the server
 
 ```
