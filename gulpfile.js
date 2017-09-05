@@ -19,7 +19,11 @@ gulp.task('typescript', function(){
 });
 
 gulp.task('libs', function(){
-    return gulp.src(lib.ext('js').files)
+    return gulp.src(['bower_components/jQuery/dist/jquery.js', 
+    'bower_components/angular/angular.js', 
+    'bower_components/angular-ui-router/release/angular-ui-router.js',
+    'bower_components/datatables.net/js/jquery.dataTables.js',
+    'bower_components/angular-datatables/dist/angular-datatables.js'])
         .pipe(concat('libs.js'))
         .pipe(gulp.dest('dist'));
 })
